@@ -1,0 +1,363 @@
+@prefix      skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix      foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns2: <http://purl.org/collections/nl/dss/elbing/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+@prefix dss: <http://purl.org/collections/nl/dss/> .
+@prefix mdb: <http://purl.org/collections/nl/dss/mdb/> .
+@prefix  das: <http://purl.org/collections/nl/dss/das/> .
+
+@prefix archangel: <http://purl.org/collections/nl/dss/archangel/> .
+
+ns2:Account
+	a rdfs:Class ;
+	rdfs:subClassOf skos:Concept ;
+	rdfs:label "Account" .
+
+ns2:IncomingPF
+	a rdfs:Class ;
+	rdfs:subClassOf qb:Observation ;
+	rdfs:label "IncomingPF" .
+
+ns2:Journey
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Record, dss:Voyage ;
+	rdfs:label "Journey" .
+
+ns2:OutgoingPF
+	a rdfs:Class ;
+	rdfs:subClassOf qb:Observation ;
+	rdfs:label "OutgoingPF" .
+
+ns2:Person
+	a rdfs:Class ;
+	rdfs:subClassOf foaf:Person, dss:Person;
+	rdfs:label "Person" .
+
+ns2:Place
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Place, skos:Concept;
+	rdfs:label "Place" .
+
+ns2:Product
+	a rdfs:Class ;
+	rdfs:subClassOf skos:Concept;
+	rdfs:label "Product" .
+
+ns2:ProductFlow
+	a rdfs:Class ;
+	rdfs:subClassOf dss:ProductFlow ;
+	rdfs:label "ProductFlow" .
+
+ns2:Ship
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Ship;
+	rdfs:label "Ship" .
+
+ns2:Toll
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Toll ;
+	rdfs:label "Toll" .
+
+ns2:Value
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Value ;
+	rdfs:label "Value" .
+	
+ns2:unit
+	a rdfs:Class ;
+	rdfs:subClassOf qb:DimensionsProperty ;
+	rdfs:label "unit" .
+
+	#properties
+	
+ns2:hasAccount
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasAccount" ;
+	rdfs:range ns2:Account .
+
+ns2:hasAmount
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasAmount" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasCaptain
+	a rdf:Property ;
+	rdfs:domain ns2:Journey ;
+	rdfs:subPropertyOf dss:has_captain ;
+	rdfs:label "hasCaptain" ;
+	rdfs:range ns2:Person ,
+		   rdfs:Resource .
+
+ns2:hasCode
+	a rdf:Property ;
+	rdfs:label "hasCode" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasDate
+	a rdf:Property ;
+	rdfs:domain ns2:Journey ;
+	rdfs:subPropertyOf dct:date ;
+	rdfs:label "hasDate" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasDestination
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain ns2:Journey ;
+	rdfs:label "hasDestination" ;
+	rdfs:range ns2:Place ,
+		   rdfs:Resource .
+
+ns2:hasDirection
+	a rdf:Property ;
+	rdfs:domain ns2:OutgoingPF ,
+		    ns2:ProductFlow ;
+	rdfs:label "hasDirection" ;
+	rdfs:range rdfs:Resource .
+
+ns2:hasExportToll
+	a rdf:Property ;
+	rdfs:domain ns2:Journey ;
+	rdfs:label "hasExportToll" ;
+	rdfs:range ns2:Toll .
+
+ns2:hasGlob
+	a rdf:Property ;
+	rdfs:label "hasGlob" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasHometown
+	a rdf:Property ;
+	rdfs:subPropertyOf foaf:based_near, mdb:woonplaats ;
+	rdfs:domain ns2:Person ;
+	rdfs:label "hasHometown" ;
+	rdfs:range rdfs:Resource .
+
+ns2:hasID
+	a rdf:Property ;
+	rdfs:label "hasID" ;
+	rdfs:subPropertyOf dct:identifier;
+	rdfs:range rdfs:Literal .
+
+ns2:hasIDDestin
+	a rdf:Property ;
+	rdfs:domain ns2:Place ;
+	rdfs:label "hasIDDestin" ;
+	rdfs:subPropertyOf dct:identifier;
+	rdfs:range rdfs:Literal .
+
+ns2:hasIDProven
+	a rdf:Property ;
+	rdfs:domain ns2:Place ;
+	rdfs:label "hasIDProven" ;
+	rdfs:subPropertyOf dct:identifier;
+	rdfs:range rdfs:Literal .
+
+ns2:hasIDShip
+	a rdf:Property ;
+	rdfs:domain ns2:Ship ;
+	rdfs:label "hasIDShip" ;
+	rdfs:subPropertyOf dct:identifier;
+	rdfs:range rdfs:Literal .
+
+ns2:hasImportToll
+	a rdf:Property ;
+	rdfs:domain ns2:Journey ;
+	rdfs:label "hasImportToll" ;
+	rdfs:range ns2:Toll .
+
+ns2:hasIncoming
+	a rdf:Property ;
+	rdfs:domain ns2:ProductFlow ;
+	rdfs:label "hasIncoming" ;
+	rdfs:range ns2:IncomingPF .
+
+ns2:hasOutgoing
+	a rdf:Property ;
+	rdfs:domain ns2:ProductFlow ;
+	rdfs:label "hasOutgoing" ;
+	rdfs:range ns2:OutgoingPF .
+
+ns2:hasPart
+	a rdf:Property ;
+	rdfs:domain ns2:ProductFlow ;
+	rdfs:label "hasPart" ;
+	rdfs:range rdfs:Resource .
+
+ns2:hasProduct
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasProduct" .
+
+ns2:hasProductflow
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:ProductFlow ;
+	rdfs:domain ns2:Journey ;
+	rdfs:label "hasProductflow" ;
+	rdfs:range ns2:ProductFlow .
+
+ns2:hasShip
+	a rdf:Property ;
+	rdfs:domain ns2:Journey ;
+	rdfs:label "hasShip" ;
+	rdfs:range ns2:Ship ;
+	rdfs:subPropertyOf dss:has_ship .
+
+ns2:hasTOLLD
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLD" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLEXD
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLEXD" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLEXFL
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLEXFL" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLEXGR
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLEXGR" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLEXM
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLEXM" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLEXSCH
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLEXSCH" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLFL
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLFL" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLGR
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLGR" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLIMD
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLIMD" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLIMFL
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLIMFL" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLIMGR
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLIMGR" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLIMM
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLIMM" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLIMSCH
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLIMSCH" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLM
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLM" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasTOLLSCH
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Toll ;
+	rdfs:label "hasTOLLSCH" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasToll
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasToll ;
+	rdfs:domain ns2:ProductFlow ;
+	rdfs:label "hasToll" ;
+	rdfs:range ns2:Toll .
+
+ns2:hasUnit
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasUnit" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasVALUEFL
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Value ;
+	rdfs:label "hasVALUEFL" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasVALUEGR
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Value ;
+	rdfs:label "hasVALUEGR" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasVALUEM
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Value ;
+	rdfs:label "hasVALUEM" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasVALUERT
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain ns2:Value ;
+	rdfs:label "hasVALUERT" ;
+	rdfs:range rdfs:Literal .
+
+ns2:hasValue
+	a rdf:Property ;
+	rdfs:domain ns2:ProductFlow ;
+	rdfs:label "hasValue" ;
+	rdfs:range ns2:Value .

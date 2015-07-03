@@ -1,0 +1,343 @@
+@prefix    xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix   rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix elbing: <http://purl.org/collections/nl/dss/elbing/> .
+
+# Named toplevel resources (61)
+
+elbing:Account
+	a rdfs:Class ;
+	rdfs:label "Account" .
+
+elbing:AltLabel
+	a rdf:Property ;
+	rdfs:domain elbing:Ship ;
+	rdfs:comment "alternative label" ;
+	rdfs:subPropertyOf rdfs:label ;
+	rdfs:label "AltLabel" ;
+	rdfs:range rdfs:Literal .
+
+elbing:IncomingPF
+	a rdfs:Class ;
+	rdfs:label "IncomingPF" .
+
+elbing:Journey
+	a rdfs:Class ;
+	rdfs:label "Journey" .
+
+elbing:OutgoingPF
+	a rdfs:Class ;
+	rdfs:label "OutgoingPF" .
+
+elbing:Person
+	a rdfs:Class ;
+	rdfs:label "Person" .
+
+elbing:Place
+	a rdfs:Class ;
+	rdfs:label "Place" .
+
+elbing:Product
+	a rdfs:Class ;
+	rdfs:label "Product" .
+
+elbing:ProductFlow
+	a rdfs:Class ;
+	rdfs:label "ProductFlow" .
+
+elbing:Ship
+	a rdfs:Class ;
+	rdfs:label "Ship" .
+
+elbing:Toll
+	a rdfs:Class ;
+	rdfs:label "Toll" .
+
+elbing:Unit
+	a rdfs:Class ;
+	rdfs:label "Unit" .
+
+elbing:Value
+	a rdfs:Class ;
+	rdfs:label "Value" .
+
+elbing:altLabel
+	a rdf:Property ;
+	rdfs:domain elbing:Person ;
+	rdfs:label "altLabel" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasAccount
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasAccount" ;
+	rdfs:range elbing:Account .
+
+elbing:hasAltName
+	a rdf:Property ;
+	rdfs:domain elbing:Place ;
+	rdfs:label "hasAltName" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasAmount
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasAmount" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasCaptain
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasCaptain" ;
+	rdfs:range elbing:Person .
+
+elbing:hasCode
+	a rdf:Property ;
+	rdfs:label "hasCode" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasDate
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasDate" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasDestination
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasDestination" ;
+	rdfs:range elbing:Place .
+
+elbing:hasDirection
+	a rdf:Property ;
+	rdfs:domain elbing:OutgoingPF ;
+	rdfs:label "hasDirection" ;
+	rdfs:range rdfs:Resource .
+
+elbing:hasExportToll
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasExportToll" ;
+	rdfs:range elbing:Toll .
+
+elbing:hasGlob
+	a rdf:Property ;
+	rdfs:label "hasGlob" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasHometown
+	a rdf:Property ;
+	rdfs:domain elbing:Person ;
+	rdfs:label "hasHometown" .
+
+elbing:hasID
+	a rdf:Property ;
+	rdfs:label "hasID" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasIDCaptain
+	a rdf:Property ;
+	rdfs:domain elbing:Person ;
+	rdfs:label "hasIDCaptain" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasIDDestin
+	a rdf:Property ;
+	rdfs:domain elbing:Place ;
+	rdfs:label "hasIDDestin" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasIDProven
+	a rdf:Property ;
+	rdfs:domain elbing:Place ;
+	rdfs:label "hasIDProven" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasIDShip
+	a rdf:Property ;
+	rdfs:domain elbing:Ship ;
+	rdfs:label "hasIDShip" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasImportToll
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasImportToll" ;
+	rdfs:range elbing:Toll .
+
+elbing:hasIncoming
+	a rdf:Property ;
+	rdfs:domain elbing:ProductFlow ;
+	rdfs:label "hasIncoming" ;
+	rdfs:range elbing:IncomingPF .
+
+elbing:hasNormalDate
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasNormalDate" ;
+	rdfs:range xsd:date .
+
+elbing:hasOutgoing
+	a rdf:Property ;
+	rdfs:domain elbing:ProductFlow ;
+	rdfs:label "hasOutgoing" ;
+	rdfs:range elbing:OutgoingPF .
+
+elbing:hasPart
+	a rdf:Property ;
+	rdfs:label "hasPart" ;
+	rdfs:range rdfs:Resource .
+
+elbing:hasProduct
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasProduct" .
+
+elbing:hasProductflow
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasProductflow" ;
+	rdfs:range elbing:ProductFlow .
+
+elbing:hasShip
+	a rdf:Property ;
+	rdfs:domain elbing:Journey ;
+	rdfs:label "hasShip" ;
+	rdfs:range elbing:Ship .
+
+elbing:hasTOLLD
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLD" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLEXD
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLEXD" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLEXFL
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLEXFL" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLEXGR
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLEXGR" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLEXM
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLEXM" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLEXSCH
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLEXSCH" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLFL
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLFL" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLGR
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLGR" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLIMD
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLIMD" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLIMFL
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLIMFL" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLIMGR
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLIMGR" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLIMM
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLIMM" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLIMSCH
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLIMSCH" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLM
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLM" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasTOLLSCH
+	a rdf:Property ;
+	rdfs:domain elbing:Toll ;
+	rdfs:label "hasTOLLSCH" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasToll
+	a rdf:Property ;
+	rdfs:label "hasToll" ;
+	rdfs:range elbing:Toll .
+
+elbing:hasUnit
+	a rdf:Property ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:label "hasUnit" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasVALUEFL
+	a rdf:Property ;
+	rdfs:domain elbing:Value ;
+	rdfs:label "hasVALUEFL" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasVALUEGR
+	a rdf:Property ;
+	rdfs:domain elbing:Value ;
+	rdfs:label "hasVALUEGR" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasVALUEM
+	a rdf:Property ;
+	rdfs:domain elbing:Value ;
+	rdfs:label "hasVALUEM" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasVALUERT
+	a rdf:Property ;
+	rdfs:domain elbing:Value ;
+	rdfs:label "hasVALUERT" ;
+	rdfs:range rdfs:Literal .
+
+elbing:hasValue
+	a rdf:Property ;
+	rdfs:label "hasValue" ;
+	rdfs:range elbing:Value .
+
+elbing:label
+	a rdf:Property ;
+	rdfs:comment "preferred label" ;
+	rdfs:subPropertyOf rdfs:label ;
+	rdfs:label "label" ;
+	rdfs:range rdfs:Literal .

@@ -1,0 +1,75 @@
+@prefix      skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix      foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns2: <http://purl.org/collections/nl/dss/elbing/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+@prefix dss: <http://purl.org/collections/nl/dss/> .
+@prefix mdb: <http://purl.org/collections/nl/dss/mdb/> .
+@prefix  das: <http://purl.org/collections/nl/dss/das/> .
+
+@prefix archangel: <http://purl.org/collections/nl/dss/archangel/> .
+
+dss:Voyage
+	a rdfs:Class ;
+	rdfs:label "Voyage" ;
+	rdfs:subClassOf dss:Record .
+	
+	# suggestion DSS mapping
+	
+dss:Toll
+	a rdfs:Class ;
+	rdfs:label "Toll" ;
+	rdfs:subClassOf qb:Observation .
+	
+dss:Value
+	a rdfs:Class ;
+	rdfs:label "Value" ;
+	rdfs:subClassOf qb:Observation .
+	
+dss:ProductFlow
+	a rdfs:Class ;
+	rdfs:label "ProductFlow" ;
+	rdfs:subClassOf qb:Slice .
+	
+dss:Freighter
+	a rdfs:Class ;
+	rdfs:label "Freighter" ;
+	rdfs:subClassOf foaf:Organization .
+	
+	#properties
+	
+dss:hasPlaceOfArrival
+	a rdfs:Property ;
+	rdfs:label "hasPlaceOfArrival" ;
+	rdfs:domain dss:Record ;
+	rdfs:range dss:Place .
+
+dss:hasFreighter
+	a rdfs:Property ;
+	rdfs:label "hasFreighter " ;
+	rdfs:domain dss:Record ;
+	rdfs:range dss:Freighter .
+	
+dss:hasProductflow
+	a rdfs:Property ;
+	rdfs:label "hasProductFlow " ;
+	rdfs:domain dss:Record ;
+	rdfs:range dss:ProductFlow .
+	
+dss:hasToll
+	a rdfs:Property ;
+	rdfs:label "hasToll" ;
+	rdfs:domain rdf:Resource ;
+	rdfs:range dss:Toll .
+	
+dss:hasValue
+	a rdfs:Property ;
+	rdfs:label "hasValue" ;
+	rdfs:domain rdf:Resource ;
+	rdfs:range dss:Value .
+
+das:placeOfArrival rdfs:subPropertyOf dss:hasPlaceOfArrival .

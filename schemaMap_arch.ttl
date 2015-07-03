@@ -1,0 +1,292 @@
+@prefix      skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix      foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns2: <http://purl.org/collections/nl/dss/elbing/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+@prefix dss: <http://purl.org/collections/nl/dss/> .
+@prefix mdb: <http://purl.org/collections/nl/dss/mdb/> .
+@prefix  das: <http://purl.org/collections/nl/dss/das/> .
+
+@prefix archangel: <http://purl.org/collections/nl/dss/archangel/> .
+
+archangel:Freighter
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Freighter ;
+	rdfs:label "Freighter" .
+
+archangel:Harbour
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Place ;
+	rdfs:label "Harbour" .
+
+archangel:Person
+	a rdfs:Class ;
+	rdfs:subClassOf foaf:Person, dss:Person;
+	rdfs:label "Person" .
+
+archangel:Place
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Place, skos:Concept;
+	rdfs:label "Place" .
+
+archangel:Ship
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Ship;
+	rdfs:label "Ship" .
+
+archangel:Voyage
+	a rdfs:Class ;
+	rdfs:subClassOf dss:Record, dss:Voyage ;
+	rdfs:label "Voyage" .
+	
+	#properties
+
+archangel:hasCaptHometown
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasCaptHometown" ;
+	rdfs:subPropertyOf foaf:based_near, mdb:woonplaats ;	
+	rdfs:range archangel:Place .
+
+archangel:hasCaptain
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:has_captain ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasCaptain" .
+
+archangel:hasConditions
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasConditions" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasConditions2
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasConditions2" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasDate
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasDate" ;
+	rdfs:subPropertyOf dct:date ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasEditRemarks
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasEditRemarks" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price2_per_month
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price2_per_month" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price2_per_weight
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price2_per_weight" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price2_total
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price2_total" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price_per_month
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price_per_month" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price_per_weight
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price_per_weight" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreight_price_total
+	a rdf:Property ;
+	rdfs:subPropertyOf mdb:muntsoortInBron ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreight_price_total" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasFreighter
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasFreighter ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasFreighter" ;
+	rdfs:range archangel:Freighter .
+
+archangel:hasGeschut
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasGeschut" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasHarbour
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasHarbour" ;
+	rdfs:range archangel:Harbour .
+
+archangel:hasHarbour1
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour1" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour2
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour2" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour3
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour3" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour4
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour4" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour5
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour5" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour6
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour6" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour7
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour7" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour8
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour8" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHarbour9
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+	rdfs:domain archangel:Harbour ;
+	rdfs:label "hasHarbour9" ;
+	rdfs:range archangel:Place .
+
+archangel:hasHolte
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasHolte" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasHometown
+	a rdf:Property ;
+	rdfs:subPropertyOf foaf:based_near, mdb:woonplaats ;
+	rdfs:domain archangel:Person ;
+	rdfs:label "hasHometown" ;
+	rdfs:range archangel:Place .
+
+archangel:hasID_number
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasID_number" ;
+	rdfs:subPropertyOf dct:identifier;
+	rdfs:range rdfs:Literal .
+
+archangel:hasLastage
+	a rdf:Property ;
+	rdfs:subPropertyOf das:tonnage ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasLastage" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasLength
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasLength" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasRemarks
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasRemarks" ;
+	rdfs:subPropertyOf das:particulars ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasShip
+	a rdf:Property ;
+	rdfs:subPropertyOf dss:has_ship ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasShip" ;
+	rdfs:range archangel:Ship .
+
+archangel:hasSource
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasSource" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasSourceType
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasSourceType" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasVerdek
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasVerdek" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasWatlast
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasWatlast" ;
+	rdfs:range rdfs:Literal .
+
+archangel:hasWatvoet
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasWatvoet" ;
+	rdfs:range rdfs:Literal .
+	
+archangel:hasWidth
+	a rdf:Property ;
+	rdfs:domain archangel:Voyage ;
+	rdfs:label "hasWidth" ;
+	rdfs:range rdfs:Literal .
