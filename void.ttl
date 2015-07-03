@@ -8,15 +8,13 @@
 @prefix       dc: <http://purl.org/dc/terms/> .
 
 
-<oostzee_all>
+<oostzee_schema>
 	a void:Dataset ;
         dc:title "Oostzee all data" ;
 		dc:description "Oostzee all data" ;
         owl:versionInfo "0.1" ;
 		void:dataDump
-				<archangel>,
-				<elbing>,
-				<schemamapping_vb.ttl>.
+				<schemaMap_dss.ttl>.
 
 <archangel>
 	a void:Dataset ;

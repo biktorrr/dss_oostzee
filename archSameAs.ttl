@@ -1,9 +1,9 @@
-﻿@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix archs:	<http://purl.org/collections/nl/dss/archangel_schema/> .
+@prefix arch:	<http://purl.org/collections/nl/dss/archangel_schema/> .
 @prefix arch:	<http://purl.org/collections/nl/dss/archangel/> .
 @prefix elb:	<http://purl.org/collections/nl/dss/elbing/> .
 @prefix xsd: 	<http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: 	<http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
 
 
 
