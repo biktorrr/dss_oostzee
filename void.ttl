@@ -41,4 +41,5 @@
 				<elbSameAs.ttl>,
 				<elbSchema.ttl>,
 				<geo-elb.ttl>,
-				<schemaMap_elb.ttl>.
+				<schemaMap_elb.ttl>,
+				<eld_to_aat.ttl>.

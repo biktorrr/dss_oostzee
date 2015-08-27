@@ -5,166 +5,183 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
+# Added manually by Victor
+arch:archangel owl:sameAs <http://sws.geonames.org/581049/> .
+arch:livorno owl:sameAs <http://sws.geonames.org/3174659/> .
+arch:lapland owl:sameAs <http://sws.geonames.org/830603/> .
+arch:hamburg owl:sameAs <http://sws.geonames.org/2911298/> .
+arch:kola owl:sameAs <http://sws.geonames.org/546554/> .
+arch:venetie owl:sameAs <http://sws.geonames.org/3164603/> .
+arch:lissabon owl:sameAs <http://sws.geonames.org/2267057/> .
+arch:genua owl:sameAs <http://sws.geonames.org/3176219/> .
+arch:londen owl:sameAs <http://sws.geonames.org/2643743/> .
+arch:setubal owl:sameAs <http://sws.geonames.org/2262963/> .
+arch:ancona owl:sameAs <http://sws.geonames.org/3183087/> .
+arch:le_havre owl:sameAs <http://sws.geonames.org/3003796> .
+arch:bremen owl:sameAs <http://sws.geonames.org/2944388/> .
+arch:cadiz owl:sameAs <http://sws.geonames.org/2520600/> .
+arch:sanlucar_de_barrameda owl:sameAs <http://sws.geonames.org/2511306/> .
+arch:bergen owl:sameAs <http://sws.geonames.org/3161732/> .
+arch:hull owl:sameAs <http://sws.geonames.org/2645425/> .
+arch:medemblik owl:sameAs <http://sws.geonames.org/2751073/> .
+arch:gluckstadt owl:sameAs <http://sws.geonames.org/2919763/> .
+arch:elbe owl:sameAs <http://sws.geonames.org/2931271/> .
+arch:rouen owl:sameAs <http://sws.geonames.org/2982652/> .
+arch:hoorn owl:sameAs <http://sws.geonames.org/2753638/> .
 
+
+# Added  by Jeroen )
+arch:ameland owl:sameAs <http://sws.geonames.org/2759844/> .
 arch:amsterdam owl:sameAs <http://sws.geonames.org/2759793/> .
-arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:frankrijk owl:sameAs <http://sws.geonames.org/2755839/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
-arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
+arch:bereneiland owl:sameAs <http://sws.geonames.org/6620711/> .
+arch:brielle owl:sameAs <http://sws.geonames.org/2758325/> .
 arch:delfshaven owl:sameAs <http://sws.geonames.org/2757347/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:frankrijk owl:sameAs <http://sws.geonames.org/2755839/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
+arch:delfzijl owl:sameAs <http://sws.geonames.org/2757340/> .
+arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
 arch:eems owl:sameAs <http://sws.geonames.org/2756388/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
-arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
 arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:spitsbergen owl:sameAs <http://sws.geonames.org/2746917/> .
-arch:vlissingen owl:sameAs <http://sws.geonames.org/2745391/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:schiedam owl:sameAs <http://sws.geonames.org/2747595/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:veere owl:sameAs <http://sws.geonames.org/2745738/> .
-arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:brielle owl:sameAs <http://sws.geonames.org/2758325/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:vlissingen owl:sameAs <http://sws.geonames.org/2745391/> .
-arch:brielle owl:sameAs <http://sws.geonames.org/2758325/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
-arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
+arch:frankrijk owl:sameAs <http://sws.geonames.org/3017382/> .
+arch:goeree owl:sameAs <http://sws.geonames.org/2748846/> .
 arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
 arch:hellevoetsluis owl:sameAs <http://sws.geonames.org/2754453/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
+#arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
 arch:maas owl:sameAs <http://sws.geonames.org/2751306/> .
-arch:bereneiland owl:sameAs <http://sws.geonames.org/2759314/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:dordrecht owl:sameAs <http://sws.geonames.org/2756668/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:zierikzee owl:sameAs <http://sws.geonames.org/2743913/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:vlieland owl:sameAs <http://sws.geonames.org/2745417/> .
-arch:vlieland owl:sameAs <http://sws.geonames.org/2745417/> .
 arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
+arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
+arch:napels owl:sameAs <http://sws.geonames.org/2750505/> .
+arch:noordkaap owl:sameAs <http://sws.geonames.org/2749867/> .
 arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
 arch:schiedam owl:sameAs <http://sws.geonames.org/2747595/> .
-arch:harlingen owl:sameAs <http://sws.geonames.org/2754816/> .
-arch:rotterdam owl:sameAs <http://sws.geonames.org/2747890/> .
-arch:goeree owl:sameAs <http://sws.geonames.org/2748846/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:noordkaap owl:sameAs <http://sws.geonames.org/2749867/> .
-arch:enkhuizen owl:sameAs <http://sws.geonames.org/2756076/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:hoorn owl:sameAs <http://sws.geonames.org/2744898/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:eems owl:sameAs <http://sws.geonames.org/2756388/> .
-arch:eems owl:sameAs <http://sws.geonames.org/2756388/> .
-arch:eems owl:sameAs <http://sws.geonames.org/2756388/> .
-arch:delfzijl owl:sameAs <http://sws.geonames.org/2757340/> .
+arch:spitsbergen owl:sameAs <http://sws.geonames.org/7535696/> .
 arch:stavoren owl:sameAs <http://sws.geonames.org/2746816/> .
-arch:delfzijl owl:sameAs <http://sws.geonames.org/2757340/> .
-arch:delfzijl owl:sameAs <http://sws.geonames.org/2757340/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
 arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:middelburg owl:sameAs <http://sws.geonames.org/2750894/> .
+arch:veere owl:sameAs <http://sws.geonames.org/2745738/> .
+arch:vlieland owl:sameAs <http://sws.geonames.org/2745417/> .
 arch:vlissingen owl:sameAs <http://sws.geonames.org/2745391/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:texel owl:sameAs <http://sws.geonames.org/2746383/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:ameland owl:sameAs <http://sws.geonames.org/2759844/> .
-arch:noordkaap owl:sameAs <http://sws.geonames.org/2749867/> .
-arch:noordkaap owl:sameAs <http://sws.geonames.org/2749867/> .
-arch:medemblik owl:sameAs <http://sws.geonames.org/2751072/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
-arch:bergen owl:sameAs <http://sws.geonames.org/2759154/> .
+arch:zeeland owl:sameAs <http://sws.geonames.org/2744013/> .
+arch:zierikzee owl:sameAs <http://sws.geonames.org/2743913/> .
+
+# todo
+# arch:jokanga
+# arch:maas
+# arch:bordeaux
+# arch:harlingen
+# arch:kopenhagen
+# arch:la_rochelle
+# arch:sevilla
+# arch:trondheim
+# arch:bayonne
+# arch:civita_vecchia
+# arch:dublin
+# arch:goro
+# arch:kilduin
+# arch:noorwegen
+# arch:dordrecht
+# arch:emden
+# arch:lubeck
+# arch:marseille
+# arch:napels
+# arch:oostende
+# arch:brouage
+# arch:duinkerken
+# arch:eems
+# arch:kreta
+# arch:vlie
+# arch:calais
+# arch:corfu
+# arch:danzig
+# arch:delfzijl
+# arch:dieppe
+# arch:flekkeroy
+# arch:helsingor
+# arch:italie
+# arch:nantes
+# arch:noordkaap
+# arch:republiek
+# arch:saint-malo
+# arch:sardinie
+# arch:varda�
+# arch:vlissingen
+# arch:alematte
+# arch:brielle
+# arch:cipene
+# arch:delfshaven
+# arch:frankrijk
+# arch:gibraltar
+# arch:goteborg
+# arch:honfleur
+# arch:ierland
+# arch:la_spezia
+# arch:messina
+# arch:middellandse_zee
+# arch:munnickefoort
+# arch:nova_zembla
+# arch:petsjenga
+# arch:plymouth
+# arch:portsmouth
+# arch:scandinavie
+# arch:schiedam
+# arch:silenske
+# arch:sint_maria
+# arch:sint_sebastiaan
+# arch:sont
+# arch:spitsbergen
+# arch:viareggio
+# arch:vlieland
+# arch:aalborg
+# arch:alamatte
+# arch:ameland
+# arch:baskenland
+# arch:bereneiland
+# arch:bilbao
+# arch:bokn
+# arch:brest
+# arch:caen
+# arch:castellammare_di_stabia
+# arch:croswijck
+# arch:de_hoxeados
+# arch:donega
+# arch:dover
+# arch:egersund
+# arch:eres
+# arch:ganwijck
+# arch:goeree
+# arch:groenland
+# arch:guardamar_del_segura
+# arch:halmstad
+# arch:helgoland
+# arch:hellevoetsluis
+# arch:het_vlie
+# arch:jan_mayen
+# arch:la_roche_bernard
+# arch:le_croisic
+# arch:loppa
+# arch:madeira
+# arch:malaga
+# arch:malamocco
+# arch:malta
+# arch:marbella
+# arch:nordmaore
+# arch:oostsant
+# arch:oostzee
+# arch:portugal
+# arch:poulgijs
+# arch:san_sebastian
+# arch:santwijck
+# arch:sicilie
+# arch:solombala
+# arch:stavoren
+# arch:toulon
+# arch:travemunde
+# arch:tromso
+# arch:veere
+# arch:velez_malaga
+# arch:vlecke
+# arch:weser
+# arch:westrijsen
+# arch:yarmouth
+# arch:zakynthos
+# arch:zierikzee
+# arch:zoutbocht
+# arch:zuiderzeehaven
+

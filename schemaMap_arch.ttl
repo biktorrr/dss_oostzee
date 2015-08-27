@@ -140,7 +140,7 @@ archangel:hasGeschut
 
 archangel:hasHarbour
 	a rdf:Property ;
-	rdfs:subPropertyOf dss:hasPlaceOfArrival ;
+#	rdfs:subPropertyOf dss:hasPlaceOfArrival ;  removed this since this is on a different level than hasHarbour1 2 etc
 	rdfs:domain archangel:Voyage ;
 	rdfs:label "hasHarbour" ;
 	rdfs:range archangel:Harbour .
